@@ -1,10 +1,12 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
-        double weight = 89.0;
-        double height = 167;
-        double a = service.calculate(89.0,167.0);
-        double roundOff = Math.round(a*100)/100D;
+        double weight = 75.5;
+        System.out.println("Вес :" + weight);
+        double height = 1.77;
+        System.out.println("Рост :" + height);
+        double a = service.calculate(weight, height);
+        double roundOff = Math.round(a * 100) / 100D;
         double bmi = roundOff;
         System.out.println("ИМТ :" + bmi);
 
